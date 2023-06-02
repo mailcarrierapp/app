@@ -2,7 +2,6 @@ FROM serversideup/php:8.2-fpm-nginx as base
 
 ENV AUTORUN_LARAVEL_MIGRATION=true
 ENV SSL_MODE=off
-ENV APP_ENV=production
 
 COPY --from=mlocati/php-extension-installer /usr/bin/install-php-extensions /usr/local/bin/
 
